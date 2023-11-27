@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <!-- HINT:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  -->
+  <style>
+    .container {
+      color: white;
+      border: 5px solid gold;
+      display: flex;
+      justify-content: space-around;
+      align-items:stretch;
+      height: 70vh;
+      padding: 0px;
+      margin: 0px;
+      }
+    
+    .container>*{
+      flex-basis: 100px;
+        
+    }
+    /*
+Select all the elements that are the direct
+children of the .container class.
+    */
+
+    .viva-magenta {background-color: #BB2649;}
+    .very-peri {background-color: #6667AB;}
+    .ultimate-grey {background-color: #939597;}
+    .illuminating {background-color: #F5DF4D;}
+    .classic-blue {background-color: #0F4C81;}
+    .living-coral {background-color: #FF6F61;}
+    .ultra-violet {background-color: #5F4B8B;}
+    .para{
+        font-size: 50px;
+        padding: 0px;
+        margin: 0px;
+        color: black;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+               
+    }
+    .para>*{
+        flex-basis: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="viva-magenta">2023</div>
+    <div class="very-peri">2022</div>
+    <div class="ultimate-grey">2021</div>
+    <div class="illuminating">2020</div>
+    <div class="classic-blue">2019</div>
+    <div class="living-coral">2018</div>
+    <div class="ultra-violet">2017</div>
+  </div>
+  <div class="para"><p>Past Colors of the Year</p></div>
+  
+</body>
+
+</html>
